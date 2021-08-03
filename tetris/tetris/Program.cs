@@ -14,8 +14,14 @@ namespace tetris
             Console.SetCursorPosition(x1,y1);
             Console.WriteLine(c1);
             Drow(5,5,'#');
+            Drow(6, 5, '#');
+            Drow(7, 5, '#');
+            Drow(8, 5, '#');
             Console.ReadKey();
             
+
+
+
         }
 
         static void Drow(int x, int y, char c)
