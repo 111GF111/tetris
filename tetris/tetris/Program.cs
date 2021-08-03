@@ -6,28 +6,24 @@ namespace tetris
     {
         static void Main(string[] args)
         {
-            //Console.SetWindowSize(40,30);
-            //Console.SetBufferSize(40,30);
-            int x1 = 2;
-            int y1 = 3;
-            char c1 = '*';
-            Console.SetCursorPosition(x1,y1);
-            Console.WriteLine(c1);
-            Drow(5,5,'#');
-            Drow(6, 5, '#');
-            Drow(7, 5, '#');
-            Drow(8, 5, '#');
+            Console.SetWindowSize(40, 30);
+            Console.SetBufferSize(40, 30);
+            Point p1 = new Point();
+            p1.x = 2;
+            p1.y = 3;
+            p1.c = '*';
+            p1.Draw();
+            Point p2 = new Point();
+            p1.x = 4;
+            p1.y = 5;
+            p1.c = '*';
+            p1.Draw();
             Console.ReadKey();
             
 
 
 
         }
-
-        static void Drow(int x, int y, char c)
-        {
-            Console.SetCursorPosition(x,y);
-            Console.WriteLine(c);
-        }
+               
     }
 }
