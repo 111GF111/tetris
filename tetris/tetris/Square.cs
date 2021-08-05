@@ -8,10 +8,9 @@ using tetris;
 
 namespace tetris
 {
-    class Square
-    {
-        Point[] points = new Point[4];
-                        
+    class Square: Figure 
+    { 
+                                
         public Square(int a, int b, char sym) 
         {
             points[0] = new Point(a, b, sym);
@@ -21,13 +20,7 @@ namespace tetris
 
         }
 
-        public void Draw() 
-        {
-            foreach (var p in points)
-            {
-                p.Draw();
-            }
-        }
+       
                 
     }
 }

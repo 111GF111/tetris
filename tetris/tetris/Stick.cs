@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace tetris
 {
-    class Stick
+    class Stick : Figure
     {
-        Point[] points = new Point[4];
+        
 
         public Stick(int a, int b, char sym) 
         {
@@ -18,14 +18,7 @@ namespace tetris
             points[3] = new Point(a, b+3, sym);
 
         }
-        public void Draw() 
-        {
-            foreach (var item in points)
-            {
-                item.Draw();
-            }
-        }
-        
+       
 
     }
 }
