@@ -24,5 +24,30 @@ namespace tetris
             c = sym;
         }
         public Point() { }
+        public void Move(Direction dir)
+        {
+            
+            if (dir == Direction.left)
+            {
+                x -= 1; 
+            }
+
+            if (dir == Direction.right)
+            {
+                x += 1;
+            }
+            if (dir == Direction.down)
+            {
+                
+                y += 1;
+                
+            }
+        }
+
+        internal void Hide()
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(" ");
+        }
     }
 }
